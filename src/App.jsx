@@ -8,8 +8,7 @@ const WORK_EXPERIENCE = [
     company: '본아이에프',
     role: 'Store Manager',
     tag: 'Internship',
-    img: 'images/bonif.jpg',
-    imgPosition: 'top center',
+    img: 'images/bon.png',
     bullets: [
       '매장 관리 및 운영 총괄',
       '매장 운영 효율화를 위한 RAG 기반 챗봇 기획 — SM 월 12~20시간 업무 절감',
@@ -21,8 +20,7 @@ const WORK_EXPERIENCE = [
     company: '페이히어',
     role: 'Sales Management',
     tag: 'Internship',
-    img: 'images/payhere.jpg',
-    imgPosition: 'top center',
+    img: 'images/payhere.png',
     bullets: [
       '프로모션 기획 및 실행',
       '고객 데이터 이관 작업 (moduSign 활용)',
@@ -34,8 +32,7 @@ const WORK_EXPERIENCE = [
     company: '인포뱅크 Icomm',
     role: '기획 인턴',
     tag: 'Internship',
-    img: 'images/infobank.jpg',
-    imgPosition: 'top center',
+    img: 'images/infobank.png',
     bullets: [
       '카카오 예약 챗봇 운영 및 기획',
       '사용자 관점의 홍보 영상 및 팸플릿 제작 참여',
@@ -48,8 +45,7 @@ const WORK_EXPERIENCE = [
     company: '두산베어스',
     role: '대학생 마케터',
     tag: 'Activity',
-    img: 'images/doosan.jpg',
-    imgPosition: 'top left',
+    img: 'images/doosanbears.png',
     bullets: [
       'SNS 콘텐츠 제작 및 마케팅 보조 — BearstV 릴스 제작 참여',
       '구단 대면 행사 기획으로 현장 운영 경험 및 고객 소통 능력 강화',
@@ -64,8 +60,7 @@ const ACTIVITIES = [
     company: '구름톤 유니브',
     role: '중앙 운영진',
     tag: 'Community',
-    img: 'images/goorm.jpg',
-    imgPosition: 'center',
+    img: 'images/goormthon.png',
     bullets: [
       'ORIENTATION, DANPUNGTHON, ONBOARDING SEMINAR, 9UAP 등 대형 행사 기획·운영',
       '전국 대학생 개발자·기획자·디자이너 커뮤니티 운영',
@@ -77,92 +72,51 @@ const ACTIVITIES = [
 const PROJECTS = [
   {
     id: 'bon',
-    featured: true,
     period: '2025.09 — 현재',
-    tags: ['Internship', '기획', '챗봇'],
+    tags: ['PM', '개발', '기획'],
     title: '본아이에프 SM',
-    desc: '매장 운영 총괄 및 데이터 분석을 통한 매장 효율 최적화. 고객 응대 자동화를 위한 RAG 기반 챗봇 시스템 기획 및 매출 증대를 위한 매장 운영 효율화 방안을 제안했습니다.',
-    bullets: [
-      'RAG 기반 운영 매뉴얼 챗봇으로 SM 월 12~20시간 업무 절감',
-      '매출 증대를 위한 매장 운영 효율화 방안 제안',
-    ],
-    link: 'https://bon-fe.vercel.app/',
     notionUrl: 'https://app.notion.com/p/2d45e3b6a71c80db9276e8dd8a7d8a5d',
-    img: 'images/bon_project.jpg',
-  },
-  {
-    id: 'ott',
-    featured: false,
-    period: '23.11 — 24.01',
-    tags: ['기획', '프론트개발'],
-    title: 'OTT 리뷰 플랫폼 Ottify',
-    desc: '원하는 콘텐츠를 어느 OTT에서 볼 수 있는지 한눈에 확인하고, 매니아층을 위한 리뷰·토론 커뮤니티를 제공하는 플랫폼.',
-    bullets: [
-      '기획자로서 덕후 타겟 니즈 분석 및 차별화 전략 수립',
-      '프론트엔드 개발 참여 — React 기반 UI 구현',
-    ],
-    notionUrl: 'https://app.notion.com/p/1795e3b6a71c81a29718f31c3c5fad19',
-    color: '#1a1a4e',
-  },
-  {
-    id: 'studymate',
-    featured: false,
-    period: '24.03',
-    tags: ['기획', '운영', '마케팅'],
-    title: '스터디메이트',
-    desc: '대학생을 위한 스터디·멘토링 매칭 플랫폼 기획 및 운영. 구름톤 유니브 해커톤 팀 프로젝트.',
-    bullets: [
-      '팀장으로 개발자·디자이너와 협업',
-      '출시 후 인스타 개설·부스 운영 등 마케팅 업무',
-      '교내 학습공동체 프로그램 연계 추진',
-    ],
-    notionUrl: 'https://app.notion.com/p/92da8612621b435aadc92009394e33c9',
-    color: '#1e3a5f',
+    img: 'images/bon_project.png',
   },
   {
     id: 'ballog',
-    featured: false,
-    period: '24.06 — 24.08',
-    tags: ['기획', 'PM', '커뮤니티'],
+    period: '2024.06 — 2024.08',
+    tags: ['PM'],
     title: 'Ballog (볼로그)',
-    desc: '야구 팬들이 직관 일기를 기록하고 다른 팬들과 소통하는 커뮤니티 플랫폼. 15명+ 베타 사용자, 70% 긍정 피드백.',
-    bullets: [
-      '서비스 기획 및 팀 리딩 — 주간 회의·마일스톤 관리',
-      '홍보 전략 수립 및 직접 사용자 모집',
-      '피드백 기반 기능 개선 및 디자인 보완',
-    ],
     notionUrl: 'https://app.notion.com/p/6bf880cdcd2349f1a2d4b293107ae3b1',
-    color: '#1a2e1a',
-  },
-  {
-    id: 'cashtag',
-    featured: false,
-    period: '24.04 — 24.05',
-    tags: ['PM', '기획', '마케팅'],
-    title: 'Cash Tag',
-    desc: '동아리·단체를 위한 투명한 공동 가계부 서비스. 사용자 중 85%가 직관성에 긍정적 평가.',
-    bullets: [
-      '서비스 기획·와이어프레임 제작 및 로고 디자인',
-      '10명+ 동아리 친구 대상 베타 테스트 진행',
-      '피드백 반영한 초기 버전 개선',
-    ],
-    notionUrl: 'https://app.notion.com/p/0d0dd6768b91403a85703c9f6af79595',
-    color: '#1a1a2e',
+    img: 'images/ballog.png',
   },
   {
     id: 'hanga',
-    featured: false,
-    period: '24.06',
-    tags: ['PM', '기획', '해커톤'],
+    period: '2024.06',
+    tags: ['PM'],
     title: 'Hanga Hanga',
-    desc: '도파민 중독 완화를 위한 산책 인증 앱. 사진 업로드로만 산책 종료 — 자연과 가까워지는 건강 습관 형성 서비스.',
-    bullets: [
-      '아이디어 도출·서비스명 기획 및 IA 설계',
-      '개발팀 즉시 착수를 위한 와이어프레임 신속 제작',
-      '6th Ne(o)rdinary 해커톤 최우수상 수상',
-    ],
     notionUrl: 'https://app.notion.com/p/1075e3b6a71c809ab6e0cf4004ba276e',
-    color: '#0d3d26',
+    img: 'images/hanga.png',
+  },
+  {
+    id: 'cashtag',
+    period: '2024.04 — 2024.05',
+    tags: ['마케팅', 'PM'],
+    title: 'Cash Tag',
+    notionUrl: 'https://app.notion.com/p/0d0dd6768b91403a85703c9f6af79595',
+    img: 'images/cashtag.png',
+  },
+  {
+    id: 'studymate',
+    period: '2024.03',
+    tags: ['기획', '운영', '마케팅'],
+    title: '스터디메이트',
+    notionUrl: 'https://app.notion.com/p/92da8612621b435aadc92009394e33c9',
+    img: 'images/studymate.png',
+  },
+  {
+    id: 'ott',
+    period: '2023.11 — 2024.01',
+    tags: ['기획', '프론트개발'],
+    title: 'OTT 리뷰 플랫폼 Ottify',
+    notionUrl: 'https://app.notion.com/p/1795e3b6a71c81a29718f31c3c5fad19',
+    img: 'images/ottify.png',
   },
 ];
 
@@ -211,84 +165,49 @@ function ExpCard({ item, delay, reverse = false }) {
         </ul>
       </div>
       <div className="exp-card-image">
-        <img
-          src={item.img}
-          alt={item.company}
-          loading="lazy"
-          style={{ objectPosition: item.imgPosition || 'top center' }}
-        />
+        {item.img
+          ? <img src={item.img} alt={item.company} loading="lazy" style={{ objectPosition: item.imgPosition || 'center' }} />
+          : <div className="exp-card-image-placeholder" style={{ background: item.color || '#002452' }}>
+              <span>{item.company.charAt(0)}</span>
+            </div>
+        }
       </div>
     </FadeIn>
   );
 }
 
-function ProjectThumb({ project }) {
-  if (project.img) {
-    return <img src={project.img} alt={project.title} loading="lazy" />;
-  }
-  return (
-    <div className="project-thumb-placeholder" style={{ background: project.color || '#1e293b' }}>
-      <span>{project.title.charAt(0)}</span>
-    </div>
-  );
-}
-
-function ProjectLinks({ project }) {
-  return (
-    <div className="project-links">
-      {project.notionUrl && (
-        <a href={project.notionUrl} target="_blank" rel="noreferrer" className="project-link project-link--notion">
-          자세히 보기 <span>→</span>
-        </a>
-      )}
-      {project.link && (
-        <a href={project.link} target="_blank" rel="noreferrer" className="project-link project-link--live">
-          결과물 보기 <span>↗</span>
-        </a>
-      )}
-    </div>
-  );
-}
-
 function ProjectCard({ project, delay }) {
-  if (project.featured) {
-    return (
-      <FadeIn delay={delay} className="project-card project-card--featured">
-        <div className="project-thumb">
-          <ProjectThumb project={project} />
+  const card = (
+    <div className="notion-card">
+      <div className="notion-card-thumb">
+        {project.img
+          ? <img src={project.img} alt={project.title} loading="lazy" />
+          : <div className="notion-card-thumb-placeholder" style={{ background: project.color || '#1e293b' }}>
+              <span>{project.title.charAt(0)}</span>
+            </div>
+        }
+      </div>
+      <div className="notion-card-body">
+        <div className="notion-card-title">
+          <svg className="notion-card-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
+          </svg>
+          {project.title}
         </div>
-        <div className="project-body">
-          <div className="project-tags">
-            <span className="project-period">{project.period}</span>
-            {project.tags.map(t => <span key={t} className="project-tag">{t}</span>)}
-          </div>
-          <div className="project-title">{project.title}</div>
-          <p className="project-desc">{project.desc}</p>
-          <ul className="project-role-list">
-            {project.bullets.map((b, i) => <li key={i}>{b}</li>)}
-          </ul>
-          <ProjectLinks project={project} />
+        <div className="notion-card-tags">
+          {project.tags.map(t => <span key={t} className="notion-card-tag">{t}</span>)}
         </div>
-      </FadeIn>
-    );
-  }
+        <div className="notion-card-period">{project.period}</div>
+      </div>
+    </div>
+  );
+
   return (
-    <FadeIn delay={delay} className="project-card project-card--regular">
-      <div className="project-thumb">
-        <ProjectThumb project={project} />
-      </div>
-      <div className="project-body">
-        <div className="project-tags">
-          <span className="project-period">{project.period}</span>
-          {project.tags.map(t => <span key={t} className="project-tag">{t}</span>)}
-        </div>
-        <div className="project-title">{project.title}</div>
-        <p className="project-desc">{project.desc}</p>
-        <ul className="project-role-list">
-          {project.bullets.map((b, i) => <li key={i}>{b}</li>)}
-        </ul>
-        <ProjectLinks project={project} />
-      </div>
+    <FadeIn delay={delay}>
+      {project.notionUrl
+        ? <a href={project.notionUrl} target="_blank" rel="noreferrer" className="notion-card-link">{card}</a>
+        : card
+      }
     </FadeIn>
   );
 }
@@ -326,8 +245,8 @@ export default function App() {
             <h1 className="hero-name">진휘웅</h1>
             <p className="hero-subtitle">데이터 기반의 사용자 중심 기획자</p>
             <p className="hero-desc">
-              사용자의 니즈를 분석하고 데이터로 검증하며,<br />
-              개발자·디자이너와 함께 실질적인 가치를 만들어내는 PM/기획자입니다.
+              사용자 니즈를 분석하고 데이터를 검증하며,<br />
+              고객과 기업을 연결하는 사람입니다.
             </p>
             <div className="hero-cta">
               <a href="#projects" className="btn btn-primary">Projects 보기</a>
@@ -335,7 +254,7 @@ export default function App() {
             </div>
           </div>
           <div className="hero-photo-wrap">
-            <img src="images/profile.jpeg" alt="진휘웅" />
+            <img src="images/profile.png" alt="진휘웅" />
           </div>
         </div>
       </section>
@@ -363,15 +282,19 @@ export default function App() {
                 <div className="about-card-title">Awards</div>
                 <ul className="about-list">
                   {[
-                    { date: '2024.07', title: '가천대학교 TMI — 우수' },
+                    { date: '2024.07', title: '가천대학교 TMI — 우수', url: 'https://app.notion.com/p/1055e3b6a71c80bca0a3c93e2de4cceb?p=fff5e3b6a71c8106a41ded36b15797eb&pm=c' },
                     { date: '2024.06', title: '6th Ne(o)rdinary 해커톤 — 최우수' },
-                    { date: '2024.05', title: '가천대학교 공모전을 부탁해 — 장려상' },
-                    { date: '2024.05', title: '가천대학교 창업아이디어대회 — 최우수' },
-                    { date: '2024.01', title: '가천대학교 학습공동체 — 우수' },
+                    { date: '2024.05', title: '가천대학교 공모전을 부탁해 — 장려상', url: 'https://app.notion.com/p/1055e3b6a71c80bca0a3c93e2de4cceb?p=fff5e3b6a71c8102b3abc3f9ef5546a8&pm=c' },
+                    { date: '2024.05', title: '가천대학교 창업아이디어대회 — 최우수', url: 'https://app.notion.com/p/1055e3b6a71c80bca0a3c93e2de4cceb?p=fff5e3b6a71c815398c3f64191cc7f26&pm=c' },
+                    { date: '2024.01', title: '가천대학교 학습공동체 — 우수', url: 'https://app.notion.com/p/1055e3b6a71c80bca0a3c93e2de4cceb?p=fff5e3b6a71c81a1a037fd70c8517723&pm=c' },
                   ].map((a, i) => (
                     <li key={i}>
                       <span className="about-date">{a.date}</span>
-                      <span className="about-item-title">{a.title}</span>
+                      {a.url ? (
+                        <a href={a.url} target="_blank" rel="noreferrer" className="about-item-title about-item-link">{a.title}</a>
+                      ) : (
+                        <span className="about-item-title">{a.title}</span>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -382,14 +305,17 @@ export default function App() {
                 <div className="about-card-title">Activities</div>
                 <ul className="about-list">
                   {[
-                    { date: '2024.02 — 2025.02', title: '구름톤 유니브 중앙 운영진' },
+                    { date: '2024.02 — 2025.02', title: '구름톤 유니브 중앙 운영진', url: 'https://9oormthon.university/' },
                     { date: '2024.03 — 2024.08', title: 'UMC (IT 연합동아리)' },
                     { date: '2023.09 — 2024.02', title: 'Tave (IT 연합동아리)' },
                     { date: '2023.03 — 2023.06', title: '전국경제인연합회 EIC' },
                   ].map((a, i) => (
                     <li key={i}>
                       <span className="about-date">{a.date}</span>
-                      {a.title}
+                      {a.url
+                        ? <a href={a.url} target="_blank" rel="noreferrer" className="about-item-link">{a.title}</a>
+                        : a.title
+                      }
                     </li>
                   ))}
                 </ul>
@@ -444,9 +370,9 @@ export default function App() {
         <div className="section-inner">
           <FadeIn><p className="section-label">Portfolio</p></FadeIn>
           <FadeIn delay={0.05}><h2 className="section-title">다양한 프로젝트 팀장</h2></FadeIn>
-          <div className="projects-grid">
+          <div className="notion-grid">
             {PROJECTS.map((p, i) => (
-              <ProjectCard key={p.id} project={p} delay={i * 0.1} />
+              <ProjectCard key={p.id} project={p} delay={i * 0.08} />
             ))}
           </div>
         </div>
