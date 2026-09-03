@@ -152,8 +152,8 @@ function FadeIn({ children, delay = 0, className = '' }) {
 }
 
 function ExpCard({ item, delay, reverse = false }) {
-  return (
-    <FadeIn delay={delay} className={`exp-card ${reverse ? 'exp-card--reverse' : ''}`}>
+  const content = (
+    <>
       <div className="exp-card-content">
         <div className="exp-card-meta">
           <span className="exp-card-date">{item.date}</span>
@@ -173,6 +173,14 @@ function ExpCard({ item, delay, reverse = false }) {
             </div>
         }
       </div>
+    </>
+  );
+  return (
+    <FadeIn delay={delay} className={`exp-card ${reverse ? 'exp-card--reverse' : ''}`}>
+      {item.url
+        ? <a href={item.url} target="_blank" rel="noreferrer" className="exp-card-link">{content}</a>
+        : content
+      }
     </FadeIn>
   );
 }
