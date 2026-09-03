@@ -61,6 +61,7 @@ const ACTIVITIES = [
     role: '중앙 운영진',
     tag: 'Community',
     img: 'images/goormthon.png',
+    url: 'https://www.instagram.com/9oormthonuniv.official?igsh=NmE5MXZneGR0aDhz',
     bullets: [
       'ORIENTATION, DANPUNGTHON, ONBOARDING SEMINAR, 9UAP 등 대형 행사 기획·운영',
       '전국 대학생 개발자·기획자·디자이너 커뮤니티 운영',
