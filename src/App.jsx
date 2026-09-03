@@ -68,6 +68,39 @@ const ACTIVITIES = [
       '운영진으로서 행사 전반의 기획 및 진행 총괄',
     ],
   },
+  {
+    date: '2023.09 — 2024.01',
+    company: 'Tave',
+    role: 'OTT 리뷰 플랫폼 프론트엔드 개발',
+    tag: 'IT 연합동아리',
+    url: 'https://blog.naver.com/t-ave/223341015550',
+    bullets: [
+      'OTT 리뷰 플랫폼 Ottify 프론트엔드 개발 참여',
+    ],
+  },
+  {
+    date: '2023.03 — 2023.06',
+    company: '전국경제인연합회 EIC',
+    role: '경제·창업 프로그램 참가',
+    tag: 'Community',
+    url: 'https://www.instagram.com/green__santa__?igsh=NWE4eG1tYnA0Y2o1&utm_source=qr',
+    bullets: [
+      '경제 토론대회 참가',
+      '소창업 대회 참가',
+      '모의투자대회 참가',
+    ],
+  },
+  {
+    date: '2022.08 — 2022.12',
+    company: '참지마요',
+    role: '독서 교육 봉사',
+    tag: 'Volunteer',
+    url: 'https://www.instagram.com/saypain._.mongmong?igsh=azV6amRqeHlybWQ1',
+    bullets: [
+      '느린학습자 대상 독서 교육 진행',
+      '봉사시간 97.5시간',
+    ],
+  },
 ];
 
 const PROJECTS = [
