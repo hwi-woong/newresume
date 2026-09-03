@@ -306,9 +306,9 @@ export default function App() {
                 <ul className="about-list">
                   {[
                     { date: '2024.02 — 2025.02', title: '구름톤 유니브 중앙 운영진', url: 'https://9oormthon.university/' },
-                    { date: '2024.03 — 2024.08', title: 'UMC (IT 연합동아리)' },
-                    { date: '2023.09 — 2024.02', title: 'Tave (IT 연합동아리)' },
-                    { date: '2023.03 — 2023.06', title: '전국경제인연합회 EIC' },
+                    { date: '2024.03 — 2024.08', title: 'UMC (IT 연합동아리)', url: 'https://www.instagram.com/gachon_makeus_challenge/' },
+                    { date: '2023.09 — 2024.02', title: 'Tave (IT 연합동아리)', url: 'https://www.tave-wave.com/project' },
+                    { date: '2023.03 — 2023.06', title: '전국경제인연합회 EIC', url: 'http://www.fki-eic.org/' },
                   ].map((a, i) => (
                     <li key={i}>
                       <span className="about-date">{a.date}</span>
