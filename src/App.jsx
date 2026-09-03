@@ -61,10 +61,47 @@ const ACTIVITIES = [
     role: '중앙 운영진',
     tag: 'Community',
     img: 'images/goormthon.png',
+    url: 'https://www.instagram.com/9oormthonuniv.official?igsh=NmE5MXZneGR0aDhz',
     bullets: [
       'ORIENTATION, DANPUNGTHON, ONBOARDING SEMINAR, 9UAP 등 대형 행사 기획·운영',
       '전국 대학생 개발자·기획자·디자이너 커뮤니티 운영',
       '운영진으로서 행사 전반의 기획 및 진행 총괄',
+    ],
+  },
+  {
+    date: '2023.09 — 2024.01',
+    company: 'Tave',
+    role: 'OTT 리뷰 플랫폼 프론트엔드 개발',
+    tag: 'IT 연합동아리',
+    img: 'images/tave.png',
+    url: 'https://blog.naver.com/t-ave/223341015550',
+    bullets: [
+      'OTT 리뷰 플랫폼 Ottify 프론트엔드 개발 참여',
+    ],
+  },
+  {
+    date: '2023.03 — 2023.06',
+    company: '전국경제인연합회 EIC',
+    role: '경제·창업 프로그램 참가',
+    tag: 'Community',
+    img: 'images/eic.png',
+    url: 'https://www.instagram.com/green__santa__?igsh=NWE4eG1tYnA0Y2o1&utm_source=qr',
+    bullets: [
+      '경제 토론대회 참가',
+      '소창업 대회 참가',
+      '모의투자대회 참가',
+    ],
+  },
+  {
+    date: '2022.08 — 2022.12',
+    company: '참지마요',
+    role: '독서 교육 봉사',
+    tag: 'Volunteer',
+    img: 'images/daewoong.png',
+    url: 'https://www.instagram.com/saypain._.mongmong?igsh=azV6amRqeHlybWQ1',
+    bullets: [
+      '느린학습자 대상 독서 교육 진행',
+      '봉사시간 97.5시간',
     ],
   },
 ];
@@ -121,13 +158,17 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  { name: 'Notion',  img: 'images/icon_notion.jpeg' },
-  { name: 'Teams',   img: 'images/icon_teams.jpeg' },
-  { name: 'Jira',    img: 'images/icon_jira.jpeg' },
-  { name: 'Slack',   img: 'images/icon_slack.jpeg' },
-  { name: 'Python',  img: 'images/icon_python.jpeg' },
-  { name: 'Excel',   img: 'images/icon_excel.jpeg' },
-  { name: 'Figma',   img: 'images/icon_figma.jpeg' },
+  { name: '엑셀', level: 70, emoji: '📊', color: '#e6f4ea' },
+  { name: '팀즈', level: 90, emoji: '👥', color: '#ecebfa' },
+  { name: '코파일럿', level: 80, emoji: '🤖', color: '#e8f1ff' },
+  { name: '피그마', level: 80, emoji: '🎨', color: '#f4ecff' },
+  { name: '미리캔버스', level: 50, emoji: '🖼️', color: '#e3fbfa' },
+  { name: '노션', level: 100, emoji: '📝', color: '#f0f0f0' },
+  { name: '슬랙', level: 90, emoji: '💬', color: '#f6eaf7' },
+  { name: '챗GPT', level: 95, emoji: '✦', color: '#e5f8f1' },
+  { name: '토익 스피킹(140 IH)', level: 70, emoji: '🇺🇸', color: '#e9f1ff' },
+  { name: 'claude', level: 80, emoji: '✳️', color: '#fbece2' },
+  { name: '리액트', level: 45, emoji: '⚛️', color: '#e5f7fd' },
 ];
 
 /* ──────────────── SUB-COMPONENTS ──────────────── */
@@ -151,8 +192,8 @@ function FadeIn({ children, delay = 0, className = '' }) {
 }
 
 function ExpCard({ item, delay, reverse = false }) {
-  return (
-    <FadeIn delay={delay} className={`exp-card ${reverse ? 'exp-card--reverse' : ''}`}>
+  const content = (
+    <>
       <div className="exp-card-content">
         <div className="exp-card-meta">
           <span className="exp-card-date">{item.date}</span>
@@ -172,6 +213,14 @@ function ExpCard({ item, delay, reverse = false }) {
             </div>
         }
       </div>
+    </>
+  );
+  return (
+    <FadeIn delay={delay} className={`exp-card ${reverse ? 'exp-card--reverse' : ''}`}>
+      {item.url
+        ? <a href={item.url} target="_blank" rel="noreferrer" className="exp-card-link">{content}</a>
+        : content
+      }
     </FadeIn>
   );
 }
@@ -306,9 +355,9 @@ export default function App() {
                 <ul className="about-list">
                   {[
                     { date: '2024.02 — 2025.02', title: '구름톤 유니브 중앙 운영진', url: 'https://9oormthon.university/' },
-                    { date: '2024.03 — 2024.08', title: 'UMC (IT 연합동아리)' },
-                    { date: '2023.09 — 2024.02', title: 'Tave (IT 연합동아리)' },
-                    { date: '2023.03 — 2023.06', title: '전국경제인연합회 EIC' },
+                    { date: '2024.03 — 2024.08', title: 'UMC (IT 연합동아리)', url: 'https://www.instagram.com/gachon_makeus_challenge/' },
+                    { date: '2023.09 — 2024.02', title: 'Tave (IT 연합동아리)', url: 'https://www.tave-wave.com/project' },
+                    { date: '2023.03 — 2023.06', title: '전국경제인연합회 EIC', url: 'http://www.fki-eic.org/' },
                   ].map((a, i) => (
                     <li key={i}>
                       <span className="about-date">{a.date}</span>
@@ -326,8 +375,8 @@ export default function App() {
                 <div className="about-card-title">Language & Certificate</div>
                 <ul className="about-list">
                   <li>
-                    <span className="about-date">2024.05.19 취득</span>
-                    <span className="about-item-title">토익스피킹 150 (IH)</span>
+                    <span className="about-date">2026.05 취득</span>
+                    <span className="about-item-title">토익스피킹 140 (IH)</span>
                   </li>
                   <li>
                     <span className="about-date">2025.03.21 취득</span>
@@ -386,9 +435,17 @@ export default function App() {
           <FadeIn delay={0.1}>
             <div className="skills-grid">
               {SKILLS.map((s, i) => (
-                <div key={i} className="skill-chip">
-                  <img src={s.img} alt={s.name} loading="lazy" />
-                  <span>{s.name}</span>
+                <div key={i} className="skill-card">
+                  <div className="skill-card-head">
+                    <span className="skill-icon" style={{ background: s.color }}>{s.emoji}</span>
+                    <span className="skill-name">{s.name}</span>
+                  </div>
+                  <div className="skill-level">
+                    <span className="skill-level-value">{s.level}%</span>
+                    <div className="skill-bar">
+                      <div className="skill-bar-fill" style={{ width: `${s.level}%` }} />
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
