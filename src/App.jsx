@@ -326,8 +326,8 @@ export default function App() {
                 <div className="about-card-title">Language & Certificate</div>
                 <ul className="about-list">
                   <li>
-                    <span className="about-date">2024.05.19 취득</span>
-                    <span className="about-item-title">토익스피킹 150 (IH)</span>
+                    <span className="about-date">2026.05 취득</span>
+                    <span className="about-item-title">토익스피킹 140 (IH)</span>
                   </li>
                   <li>
                     <span className="about-date">2025.03.21 취득</span>
