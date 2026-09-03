@@ -73,6 +73,7 @@ const ACTIVITIES = [
     company: 'Tave',
     role: 'OTT 리뷰 플랫폼 프론트엔드 개발',
     tag: 'IT 연합동아리',
+    img: 'images/tave.png',
     url: 'https://blog.naver.com/t-ave/223341015550',
     bullets: [
       'OTT 리뷰 플랫폼 Ottify 프론트엔드 개발 참여',
@@ -83,6 +84,7 @@ const ACTIVITIES = [
     company: '전국경제인연합회 EIC',
     role: '경제·창업 프로그램 참가',
     tag: 'Community',
+    img: 'images/eic.png',
     url: 'https://www.instagram.com/green__santa__?igsh=NWE4eG1tYnA0Y2o1&utm_source=qr',
     bullets: [
       '경제 토론대회 참가',
@@ -95,6 +97,7 @@ const ACTIVITIES = [
     company: '참지마요',
     role: '독서 교육 봉사',
     tag: 'Volunteer',
+    img: 'images/daewoong.png',
     url: 'https://www.instagram.com/saypain._.mongmong?igsh=azV6amRqeHlybWQ1',
     bullets: [
       '느린학습자 대상 독서 교육 진행',
