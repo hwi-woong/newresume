@@ -155,13 +155,17 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  { name: 'Notion',  img: 'images/icon_notion.jpeg' },
-  { name: 'Teams',   img: 'images/icon_teams.jpeg' },
-  { name: 'Jira',    img: 'images/icon_jira.jpeg' },
-  { name: 'Slack',   img: 'images/icon_slack.jpeg' },
-  { name: 'Python',  img: 'images/icon_python.jpeg' },
-  { name: 'Excel',   img: 'images/icon_excel.jpeg' },
-  { name: 'Figma',   img: 'images/icon_figma.jpeg' },
+  { name: '엑셀', level: 70, emoji: '📊', color: '#e6f4ea' },
+  { name: '팀즈', level: 90, emoji: '👥', color: '#ecebfa' },
+  { name: '코파일럿', level: 80, emoji: '🤖', color: '#e8f1ff' },
+  { name: '피그마', level: 80, emoji: '🎨', color: '#f4ecff' },
+  { name: '미리캔버스', level: 50, emoji: '🖼️', color: '#e3fbfa' },
+  { name: '노션', level: 100, emoji: '📝', color: '#f0f0f0' },
+  { name: '슬랙', level: 90, emoji: '💬', color: '#f6eaf7' },
+  { name: '챗GPT', level: 95, emoji: '✦', color: '#e5f8f1' },
+  { name: '토익 스피킹(140 IH)', level: 70, emoji: '🇺🇸', color: '#e9f1ff' },
+  { name: 'claude', level: 80, emoji: '✳️', color: '#fbece2' },
+  { name: '리액트', level: 45, emoji: '⚛️', color: '#e5f7fd' },
 ];
 
 /* ──────────────── SUB-COMPONENTS ──────────────── */
@@ -428,9 +432,17 @@ export default function App() {
           <FadeIn delay={0.1}>
             <div className="skills-grid">
               {SKILLS.map((s, i) => (
-                <div key={i} className="skill-chip">
-                  <img src={s.img} alt={s.name} loading="lazy" />
-                  <span>{s.name}</span>
+                <div key={i} className="skill-card">
+                  <div className="skill-card-head">
+                    <span className="skill-icon" style={{ background: s.color }}>{s.emoji}</span>
+                    <span className="skill-name">{s.name}</span>
+                  </div>
+                  <div className="skill-level">
+                    <span className="skill-level-value">{s.level}%</span>
+                    <div className="skill-bar">
+                      <div className="skill-bar-fill" style={{ width: `${s.level}%` }} />
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
