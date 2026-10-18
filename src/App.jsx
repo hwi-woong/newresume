@@ -474,7 +474,7 @@ export default function App() {
             <div>
               <div className="footer-contact-label">Project</div>
               <div className="footer-contact-value">
-                <a href="https://bon-fe.vercel.app/" target="_blank" rel="noreferrer">bon-fe.vercel.app</a>
+                <a href="https://github.com/hwi-woong" target="_blank" rel="noreferrer">github.com/hwi-woong</a>
               </div>
             </div>
           </div>
