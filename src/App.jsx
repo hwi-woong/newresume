@@ -331,7 +331,7 @@ export default function App() {
                 <ul className="about-list">
                   {[
                     { date: '2024.07', title: '가천대학교 TMI — 우수', url: 'https://app.notion.com/p/1055e3b6a71c80bca0a3c93e2de4cceb?p=fff5e3b6a71c8106a41ded36b15797eb&pm=c' },
-                    { date: '2024.06', title: '6th Ne(o)rdinary 해커톤 — 최우수' },
+                    { date: '2024.06', title: '6th Ne(o)rdinary 해커톤 — 최우수', url: 'https://app.notion.com/p/6th-Ne-o-rdinary-fff5e3b6a71c81c49434f3125385fa8c?source=copy_link' },
                     { date: '2024.05', title: '가천대학교 공모전을 부탁해 — 장려상', url: 'https://app.notion.com/p/1055e3b6a71c80bca0a3c93e2de4cceb?p=fff5e3b6a71c8102b3abc3f9ef5546a8&pm=c' },
                     { date: '2024.05', title: '가천대학교 창업아이디어대회 — 최우수', url: 'https://app.notion.com/p/1055e3b6a71c80bca0a3c93e2de4cceb?p=fff5e3b6a71c815398c3f64191cc7f26&pm=c' },
                     { date: '2024.01', title: '가천대학교 학습공동체 — 우수', url: 'https://app.notion.com/p/1055e3b6a71c80bca0a3c93e2de4cceb?p=fff5e3b6a71c81a1a037fd70c8517723&pm=c' },
