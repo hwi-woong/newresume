@@ -60,7 +60,10 @@ const ACTIVITIES = [
     role: '중앙 운영진',
     tag: 'Community',
     img: 'images/goormthon.png',
-    url: 'https://www.instagram.com/9oormthonuniv.official?igsh=NmE5MXZneGR0aDhz',
+    links: [
+      { label: '사이트로 이동하기', url: 'https://9oormthon.university/' },
+      { label: '인스타그램으로 이동하기', url: 'https://www.instagram.com/9oormthonuniv.official?igsh=NmE5MXZneGR0aDhz' },
+    ],
     bullets: [
       'ORIENTATION, DANPUNGTHON, ONBOARDING SEMINAR, 9UAP 등 대형 행사 기획·운영',
       '전국 대학생 개발자·기획자·디자이너 커뮤니티 운영',
@@ -203,6 +206,13 @@ function ExpCard({ item, delay, reverse = false }) {
         <ul className="exp-card-bullets">
           {item.bullets.map((b, i) => <li key={i}>{b}</li>)}
         </ul>
+        {item.links && (
+          <div className="exp-card-links">
+            {item.links.map((l, i) => (
+              <a key={i} href={l.url} target="_blank" rel="noreferrer" className="exp-card-link-btn">{l.label}</a>
+            ))}
+          </div>
+        )}
       </div>
       <div className="exp-card-image">
         {item.img
