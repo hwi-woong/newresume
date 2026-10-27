@@ -7,7 +7,7 @@ const WORK_EXPERIENCE = [
     date: '2025.09 — 현재',
     company: '본아이에프',
     role: 'Store Manager',
-    tag: 'Internship',
+    tag: '정규직',
     img: 'images/bon.png',
     bullets: [
       '부산시 8개 구 일대 본죽&비빔밥 가맹점 약 30개 관리, 데이터 기반 매출 컨설팅 수행 (평균 매출 15% 개선)',
